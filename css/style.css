@@ -1,0 +1,174 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+/*-------FONTS------*/
+@font-face {
+     font-family: League;
+     src: url("../fonts/LeagueSpartan-Bold.otf");
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url("https://fonts.googleapis.com/css?family=Raleway");
+}
+
+.raleway {
+	font-family: Raleway;
+}
+
+* {
+	font-family: League;
+}
+
+.nav {
+	font-size: 26px;
+	color: black;
+}
+
+.nav:hover{
+	color: white;
+}
+
+.logo {
+	font-size: 30px;
+	color: black;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#index-banner {
+	background-color: pink;
+}
+
+.header{
+	padding: 30px;
+	background-size: 20px 20px;
+    background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.centered {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.whitefont{
+	color: white;
+}
+
+.darkblue{
+	background-color: #605DE8;
+}
+
+.brightgreen{
+	background-color: #C5E879;
+}
+
+.brightblue{
+	background-color: #A2E7F2;
+}
+
+.white {
+	background-color: white;
+}
+
+.marker {
+	color: white;
+	background-color: black;
+	padding: 1px;
+}
+
+.markerpink {
+	color: black;
+	background-color: #A2E7F2;
+	padding: 1px;
+}
+
+.highlight {
+	/*border-style: solid;*/
+	padding: 3px;
+	margin: 5px;
+	background-color: #ACB4B5;
+}
+
+.tags {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.line {
+	border-left-style: solid;
+	/*border-style: solid;*/
+}
+
+.link {
+	color: black;
+	text-decoration: underline;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.card {
+	border-color: black;
+	border: 2px;
+	border-style: solid;
+	box-shadow: 10px 10px 0px;
+}
+
+.projects{
+	padding-top: 20px;
+}
+
+.title {
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+.description {
+	font-family: Raleway;
+	padding-bottom: 10px;
+}
+
+.details {
+	display: none;
+}
+
+.mybutton {
+	font-size: 22px;
+	font-weight: 300;
+	color: black;
+	background-color: white;
+	border-color: black;
+	border: 3px;
+	border-style: solid;
+	box-shadow: 10px 10px 0px;
+	margin: 3px;
+	text-align: center;
+	letter-spacing: .5px;
+	transition: .2s ease-out;
+	cursor: pointer;
+	padding-left: 15px;
+	padding-right: 15px;
+}
