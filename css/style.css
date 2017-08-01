@@ -22,11 +22,15 @@
 
 * {
 	font-family: League;
+/*	border-style: solid;
+	border-color: red;
+	border-width: 1px;*/
 }
 
 .nav {
 	font-size: 26px;
 	color: black;
+	text-align: right;
 }
 
 .nav:hover{
@@ -51,7 +55,7 @@
 }
 
 .header{
-	padding: 30px;
+	/*padding: 30px;*/
 	background-size: 20px 20px;
     background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
 }
@@ -104,18 +108,82 @@
 
 .highlight {
 	/*border-style: solid;*/
-	padding: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	margin: 5px;
 	background-color: #ACB4B5;
 }
 
+.mobilelink {
+	display: none;
+}
+
+/*Flex Container*/
 .tags {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	display: flex;
+
+	max-width: 1000px;
+}
+
+.intro {
+	/*width: 80%;*/
+}
+
+/*Flex Items*/
+span.tags.highlight {
+	flex: 1;
+}
+
+/*Linebreak on mobile*/
+@media all and (max-width:600px){
+
+	.tags {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	a.logo{
+		display: none;
+	}
+
+	.right {
+		text-align: center;
+	}
+
+	.line{
+		border-left-style: none !important;
+		border-bottom-style: solid;
+	}
+
+	.col.s12.m10.line {
+		text-align: center;
+	}
+
+	.col.s12.m10{
+		text-align: center;
+		border-bottom-style: solid;
+	}
+
+	.mobilelink {
+		display: inline-block;
+	}
+
+	* {
+		font-size: 18px;
+	}
+
+	.marker{
+		font-size: 18px;
+	}
 }
 
 .underlined {
 	text-decoration: underline;
+	color: inherit;
 }
 
 .line {
