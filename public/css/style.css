@@ -258,7 +258,7 @@ span.tags.highlight {
 /*---RESPONSIVENESS----*/
 
 /*Linebreak on mobile*/
-@media all and (max-width:500px){
+@media all and (max-width:600px){
 
 	.tags {
 		-webkit-box-orient: vertical;
@@ -266,6 +266,10 @@ span.tags.highlight {
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 		text-align: center;
+	}
+
+	.svgcontainer {
+		display: none;
 	}
 
 /*	.card {
