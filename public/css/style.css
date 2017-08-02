@@ -37,7 +37,9 @@ a {
 }
 
 .centered {
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -100,6 +102,8 @@ a {
 .header{
 	/*padding: 30px;*/
 	background-size: 20px 20px;
+    background-image: -webkit-linear-gradient(left, white 1px, transparent 1px), -webkit-linear-gradient(top, white 1px, transparent 1px);
+    background-image: -o-linear-gradient(left, white 1px, transparent 1px), -o-linear-gradient(top, white 1px, transparent 1px);
     background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
 }
 
@@ -122,7 +126,8 @@ a {
 	border-color: black;
 	border: 2px;
 	border-style: solid;
-	box-shadow: 10px 10px 0px;
+	-webkit-box-shadow: 10px 10px 0px;
+	        box-shadow: 10px 10px 0px;
 }
 
 /*---STYLING TOOLS----*/
@@ -153,26 +158,38 @@ a {
 
 /*FLEX CONTAINER*/
 .projectcard {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 /*FLEX ITEMS*/
 .cardinfo {
-	flex:1;
+	-webkit-box-flex:1;
+	    -ms-flex:1;
+	        flex:1;
 }
 
 /*FLEX CONTAINER*/
 .svgcontainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
 
 /*FLEX ITEM*/
 .svg {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	height: 150px;
 	padding: 10%;
 }
@@ -211,6 +228,8 @@ a {
 .tags {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	max-width: 1000px;
@@ -219,7 +238,9 @@ a {
 
 /*Flex Items*/
 span.tags.highlight {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 
 /*----CONTACT PAGE SPECIFIC STYLING--*/
@@ -238,12 +259,18 @@ span.tags.highlight {
 @media all and (max-width:600px){
 
 	.tags {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		text-align: center;
 	}
 
 	.cards {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	a.logo{
@@ -286,4 +313,3 @@ span.tags.highlight {
 		margin: none;
 	}
 }
-
