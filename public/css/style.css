@@ -122,13 +122,13 @@ a {
 	font-size: inherit;
 }
 
-.card {
+/*.card {
 	border-color: black;
 	border: 2px;
 	border-style: solid;
 	-webkit-box-shadow: 10px 10px 0px;
 	        box-shadow: 10px 10px 0px;
-}
+}*/
 
 /*---STYLING TOOLS----*/
 
@@ -161,6 +161,11 @@ a {
 .projectcard {
 	/*min-width: 300px;*/
 	/*flex-wrap: wrap;*/
+	border-color: black;
+	border: 2px;
+	border-style: solid;
+	-webkit-box-shadow: 10px 10px 0px;
+	        box-shadow: 10px 10px 0px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -250,16 +255,27 @@ span.tags.highlight {
 
 .contact {
 	background-color: white;
+	border-color: black;
+	border: 2px;
+	border-style: solid;
+	-webkit-box-shadow: 10px 10px 0px;
+	        box-shadow: 10px 10px 0px;
 }
 
 .contact:hover{
 	background-color: #A2E7F2;
 }
 
+
 /*---RESPONSIVENESS----*/
 
 /*Linebreak on mobile*/
 @media only screen and (max-width:768px){
+
+	.projectcard {
+		margin-bottom: 5%;
+
+	}
 
 	.tags {
 		-webkit-box-orient: vertical;
