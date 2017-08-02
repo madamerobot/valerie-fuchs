@@ -1,10 +1,5 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+
 /*-------FONTS------*/
 @font-face {
      font-family: League;
@@ -20,6 +15,8 @@
 	font-family: Raleway;
 }
 
+/*----GLOBAL STYLES---*/
+
 * {
 	font-family: League;
 /*	border-style: solid;
@@ -29,39 +26,6 @@
 
 a {
 	color: black;
-}
-
-.nav {
-	font-size: 26px;
-	color: black;
-	text-align: right;
-}
-
-.nav:hover{
-	color: white;
-}
-
-.logo {
-	font-size: 30px;
-	color: black;
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-
-.icon-block .material-icons {
-	font-size: inherit;
-}
-
-#index-banner {
-	background-color: pink;
-}
-
-.header{
-	/*padding: 30px;*/
-	background-size: 20px 20px;
-    background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
 }
 
 .right {
@@ -77,6 +41,20 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.underlined {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.link {
+	color: black;
+	text-decoration: underline;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/*------COLORS----*/
 
 .whitefont{
 	color: white;
@@ -97,6 +75,57 @@ a {
 .white {
 	background-color: white;
 }
+
+/*-----NAVIGATION & HEADER---*/
+
+.nav {
+	font-size: 26px;
+	color: black;
+	text-align: right;
+}
+
+.nav:hover{
+	color: white;
+}
+
+.logo {
+	font-size: 30px;
+	color: black;
+}
+
+#index-banner {
+	background-color: pink;
+}
+
+.header{
+	/*padding: 30px;*/
+	background-size: 20px 20px;
+    background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
+}
+
+/* PORTFOLIO NAV ITEM ONLY APPEARS ON MOBILE VIEW */
+.mobilelink {
+	display: none;
+}
+
+/*-----LAYOUT ELEMENTS-----*/
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.card {
+	border-color: black;
+	border: 2px;
+	border-style: solid;
+	box-shadow: 10px 10px 0px;
+}
+
+/*---STYLING TOOLS----*/
 
 .marker {
 	color: white;
@@ -120,7 +149,60 @@ a {
 	background-color: #ACB4B5;
 }
 
-.mobilelink {
+/*----INTRO PAGE SPECIFIC STYLING---*/
+
+/*FLEX CONTAINER*/
+.projectcard {
+	display: flex;
+	justify-content: center;
+}
+
+/*FLEX ITEMS*/
+.cardinfo {
+	flex:1;
+}
+
+/*FLEX CONTAINER*/
+.svgcontainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+/*FLEX ITEM*/
+.svg {
+	flex: 1;
+	height: 150px;
+	padding: 10%;
+}
+
+.teaser {
+	min-height: 165px;
+}
+
+/*----CV PAGE SPECIFIC STYLING----*/
+
+.line {
+	border-left-style: solid;
+	/*border-style: solid;*/
+}
+
+.projects{
+	padding-top: 20px;
+}
+
+.title {
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+.description {
+	font-family: Raleway;
+	padding-bottom: 10px;
+}
+
+.details {
 	display: none;
 }
 
@@ -133,17 +215,26 @@ a {
 	max-width: 1000px;
 }
 
-.intro {
-	/*width: 80%;*/
-}
 
 /*Flex Items*/
 span.tags.highlight {
 	flex: 1;
 }
 
+/*----CONTACT PAGE SPECIFIC STYLING--*/
+
+.contact {
+	background-color: white;
+}
+
+.contact:hover{
+	background-color: #A2E7F2;
+}
+
+/*---RESPONSIVENESS----*/
+
 /*Linebreak on mobile*/
-@media all and (max-width:600px){
+@media all and (max-width:750px){
 
 	.tags {
 		flex-direction: column;
@@ -183,108 +274,11 @@ span.tags.highlight {
 	.marker{
 		font-size: 18px;
 	}
+
+	.svg {
+		padding: 0%;
+		height: 200px;
+		margin: none;
+	}
 }
 
-.underlined {
-	text-decoration: underline;
-	color: inherit;
-}
-
-.line {
-	border-left-style: solid;
-	/*border-style: solid;*/
-}
-
-.link {
-	color: black;
-	text-decoration: underline;
-	text-align: center;
-	padding-bottom: 10px;
-}
-
-.card {
-	border-color: black;
-	border: 2px;
-	border-style: solid;
-	box-shadow: 10px 10px 0px;
-}
-
-/*FLEX CONTAINER*/
-.projectcard {
-	display: flex;
-	justify-content: center;
-}
-
-/*FLEX ITEMS*/
-.cardinfo {
-	flex:1;
-}
-
-/*FLEX CONTAINER*/
-.svgcontainer {
-	display: flex;
-	justify-content: center;
-}
-
-/*FLEX ITEM*/
-.svg {
-	height: 150px;
-	padding-top: 10%;
-	padding-bottom: 5%;
-}
-
-.teaser {
-	min-height: 165px;
-}
-
-.projects{
-	padding-top: 20px;
-}
-
-.title {
-	padding-bottom: 10px;
-	cursor: pointer;
-}
-
-.description {
-	font-family: Raleway;
-	padding-bottom: 10px;
-}
-
-.details {
-	display: none;
-}
-
-.contact {
-	background-color: white;
-}
-
-.contact:hover{
-	background-color: #A2E7F2;
-}
-
-.postlink {
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-right: 5px;
-	padding-left: 5px;
-	border-style: solid;
-}
-
-.mybutton {
-	font-size: 22px;
-	font-weight: 300;
-	color: black;
-	background-color: white;
-	border-color: black;
-	border: 3px;
-	border-style: solid;
-	box-shadow: 10px 10px 0px;
-	margin: 3px;
-	text-align: center;
-	letter-spacing: .5px;
-	transition: .2s ease-out;
-	cursor: pointer;
-	padding-left: 15px;
-	padding-right: 15px;
-}
