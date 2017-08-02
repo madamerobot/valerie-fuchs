@@ -1,0 +1,47 @@
+doctype html
+html
+	head
+		title Contact
+		link(rel='stylesheet', type='text/css', href='css/materialize.css')
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+	body
+		include navigation.pug
+		.container
+			.section
+				// Icon Section
+				.row.intro
+					div
+						h5.center
+							span.marker
+								| If you would like to grab a coffee, have any job opportunities in mind or just want to stalk me, feel free to check out my social profiles.
+				// closing row
+				.row
+					.col.m3
+					.col.s12.m6
+						.icon-block.card.centered.contact
+							p.center Just shoot me an old-school e-mail.
+							.link
+								a.link(href='mailto:hi@valerie-fuchs.de') My E-Mail
+								br
+					.col.m3
+				// closing row
+				.row
+					.col.m3
+					.col.s12.m6
+						.icon-block.card.centered.contact
+							p.center Check out the code I write.
+							.link
+								a.link(href='https://github.com/madamerobot', target='_blank') My GitHub Profile
+					.col.m3
+				// closing row
+				.row
+					.col.m3
+					.col.s12.m6
+						.icon-block.card.centered.contact
+							p.center See my CV and blog postings on LinkedIn.
+							.link
+								a.link(href='https://www.linkedin.com/in/valerie-fuchs-521b6a89/', target='_blank') My LinkedIn Profile
+					.col.m3
+				// closing row
+			// closing section
+		// closing intro container

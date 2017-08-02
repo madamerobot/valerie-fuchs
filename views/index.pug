@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		title Valerie Fuchs
+		link(rel='stylesheet', type='text/css', href='css/materialize.css')
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+		script(src='js/custom.js')
+	body
+		include navigation.pug
+		.container
+			.section
+				// Icon Section
+				.row
+					.intro
+						h5.center
+							span.marker
+								| Digital Marketing professional turned Developer,
+								br
+								| currently in
+								a.underlined(href='/about') 'Sponge-Mode'.
+					.projects
+						h5.underlined.center PORTFOLIO:
+					.col.s12.m4
+						.icon-block.card.brightblue
+							img(src='img/sunmachine.svg')
+							p.center React-App listing the best Amsterdam Summerspots, based on your preference.
+							.link
+								a.link(href='http://suninamsterdam.valerie-fuchs.de/', target='_blank') Live Link
+								br
+								a.link(href='https://github.com/madamerobot/damsun', target='_blank') Code on GitHub
+					.col.s12.m4
+						.icon-block.card.darkblue
+							img(src='img/latenightsnack.svg')
+							p.center Web-App using the Google Places API, showing only restaurants currently open.
+							.link
+								a.link(href='http://latenightsnack.valerie-fuchs.de/', target='_blank') Live Link
+								br
+								a.link(href='https://github.com/madamerobot/latenightsnack', target='_blank') Code on GitHub
+					.col.s12.m4
+						.icon-block.card.brightgreen
+							img(src='img/avocadonet.svg')
+							p.center Blog-Application built with SQL, with the single purpose to post about Avocados.
+							.link
+								a.link(href='http://avocadonet.valerie-fuchs.de/', target='_blank') Live Link
+								br
+								a.link(href='https://github.com/madamerobot/avocadonet', target='_blank') Code on GitHub
+		// closing intro container
