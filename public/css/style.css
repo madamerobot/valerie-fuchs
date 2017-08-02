@@ -158,6 +158,8 @@ a {
 
 /*FLEX CONTAINER*/
 .projectcard {
+	/*min-width: 300px;*/
+	/*flex-wrap: wrap;*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -195,8 +197,8 @@ a {
 }
 
 .teaser {
-	/*min-height: 165px;*/
-	/*min-width: 200px;*/
+ 	/*min-height: 165px;*/*/
+	/*min-width: 200px;*/*/
 }
 
 /*----CV PAGE SPECIFIC STYLING----*/
@@ -256,7 +258,7 @@ span.tags.highlight {
 /*---RESPONSIVENESS----*/
 
 /*Linebreak on mobile*/
-@media all and (max-width:600px){
+@media all and (max-width:750px){
 
 	.tags {
 		-webkit-box-orient: vertical;
@@ -266,12 +268,12 @@ span.tags.highlight {
 		text-align: center;
 	}
 
-	.cards {
+/*	.card {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-	}
+	}*/
 
 	a.logo{
 		display: none;
@@ -288,12 +290,28 @@ span.tags.highlight {
 
 	.col.s12.m10.line {
 		text-align: center;
+		border-bottom-style: solid;
+		width: 100%;
+		margin-left: auto;
+		left: auto;
+		right: auto;
 	}
 
-	.col.s12.m10{
+	.col.s12.m10.intro {
 		text-align: center;
 		border-bottom-style: solid;
+		width: 100%;
+		margin-left: auto;
+		left: auto;
+		right: auto;
 	}
+
+	.row .col.m4 {
+		width: 100%;
+		margin-left: auto;
+		left: auto;
+		right: auto;
+  	}
 
 	.mobilelink {
 		display: inline-block;
@@ -301,6 +319,11 @@ span.tags.highlight {
 
 	* {
 		font-size: 18px;
+	}
+
+	.intro {
+		font-size: 18px;
+		text-align: center;
 	}
 
 	.marker{
