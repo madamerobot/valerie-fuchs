@@ -258,7 +258,7 @@ span.tags.highlight {
 /*---RESPONSIVENESS----*/
 
 /*Linebreak on mobile*/
-@media all and (max-width:750px){
+@media all and (max-width:375px){
 
 	.tags {
 		-webkit-box-orient: vertical;
