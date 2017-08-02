@@ -178,7 +178,8 @@ a {
 }
 
 .teaser {
-	min-height: 165px;
+	/*min-height: 165px;*/
+	/*min-width: 200px;*/
 }
 
 /*----CV PAGE SPECIFIC STYLING----*/
@@ -234,11 +235,15 @@ span.tags.highlight {
 /*---RESPONSIVENESS----*/
 
 /*Linebreak on mobile*/
-@media all and (max-width:750px){
+@media all and (max-width:600px){
 
 	.tags {
 		flex-direction: column;
 		text-align: center;
+	}
+
+	.cards {
+		flex-direction: column;
 	}
 
 	a.logo{
