@@ -209,6 +209,34 @@ span.tags.highlight {
 	box-shadow: 10px 10px 0px;
 }
 
+/*FLEX CONTAINER*/
+.projectcard {
+	display: flex;
+	justify-content: center;
+}
+
+/*FLEX ITEMS*/
+.cardinfo {
+	flex:1;
+}
+
+/*FLEX CONTAINER*/
+.svgcontainer {
+	display: flex;
+	justify-content: center;
+}
+
+/*FLEX ITEM*/
+.svg {
+	height: 150px;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.teaser {
+	min-height: 165px;
+}
+
 .projects{
 	padding-top: 20px;
 }
