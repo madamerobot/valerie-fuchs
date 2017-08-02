@@ -162,6 +162,7 @@ a {
 	/*min-width: 300px;*/
 	/*flex-wrap: wrap;*/
 	border-color: black;
+	padding: 5%;
 	border: 2px;
 	border-style: solid;
 	-webkit-box-shadow: 10px 10px 0px;
