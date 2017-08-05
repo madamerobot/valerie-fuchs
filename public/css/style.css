@@ -90,6 +90,11 @@ a {
 	color: white;
 }
 
+/* PORTFOLIO NAV ITEM ONLY APPEARS ON MOBILE VIEW */
+.mobilelink {
+	display: none;
+}
+
 .logo {
 	font-size: 30px;
 	color: black;
@@ -105,11 +110,6 @@ a {
     background-image: -webkit-linear-gradient(left, white 1px, transparent 1px), -webkit-linear-gradient(top, white 1px, transparent 1px);
     background-image: -o-linear-gradient(left, white 1px, transparent 1px), -o-linear-gradient(top, white 1px, transparent 1px);
     background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
-}
-
-/* PORTFOLIO NAV ITEM ONLY APPEARS ON MOBILE VIEW */
-.mobilelink {
-	display: none;
 }
 
 /*-----LAYOUT ELEMENTS-----*/
@@ -329,7 +329,8 @@ span.tags.highlight {
   	}
 
 	.mobilelink {
-		display: inline-block;
+		display: block;
+		text-align: center;
 	}
 
 	* {
