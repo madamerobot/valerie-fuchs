@@ -10,3 +10,7 @@
 <li>Node.js</li>
 </ul>
 
+<h2>Screenshot:</h2>
+
+![Landing Page](img/landingpage.png?raw=true "Landing Page")
+
