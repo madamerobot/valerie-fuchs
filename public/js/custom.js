@@ -14,21 +14,16 @@ $(document).ready(function () {
 /*SUN*/
 $(document).ready(function () {
 
-	$(".brightblue").on("mouseenter", function() {
-		
+	$(".brightblue").on("mouseenter", function() {	
 		$(".cloud").removeClass("hide");
 		$(".drop").removeClass("hide");
-
 		$(".cloud").addClass("active");
 		$(".drop").addClass("rain");
-
 	});
 
 	$(".brightblue").on("mouseleave", function() {
-
 		$(".cloud").addClass("hide");
 		$(".drop").addClass("hide");
-
 	});
 
 });
@@ -58,20 +53,16 @@ $(document).ready(function () {
 /*AVOCADO*/
 $(document).ready(function () {
 
-	$(".brightgreen").on("mouseenter", function() {
-		
+	$(".brightgreen").on("mouseenter", function() {		
 		$(".avocado").addClass("rotate");
 		$(".green").addClass("turnbrown");
 		$(".brown").addClass("turngreen");
-
 	});
 
 	$(".brightgreen").on("mouseleave", function() {
-
 		$(".avocado").removeClass("rotate");
 		$(".green").removeClass("turnbrown");
 		$(".brown").removeClass("turngreen");
-
 	});
 
 });
