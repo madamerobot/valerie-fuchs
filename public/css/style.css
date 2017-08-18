@@ -122,14 +122,6 @@ a {
 	font-size: inherit;
 }
 
-/*.card {
-	border-color: black;
-	border: 2px;
-	border-style: solid;
-	-webkit-box-shadow: 10px 10px 0px;
-	        box-shadow: 10px 10px 0px;
-}*/
-
 /*---STYLING TOOLS----*/
 
 .marker {
@@ -206,6 +198,189 @@ a {
 .teaser {
  	/*min-height: 165px;*/*/
 	/*min-width: 200px;*/*/
+}
+
+/*-------SVG ANIMATIONS ON LANDING PAGE------*/
+
+/*SUN*/
+/*Animation Code*/
+@-webkit-keyframes cloudappear {
+  0%   {
+    transform: translateX(-80px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}
+
+@-webkit-keyframes rain {
+  0%   {
+    transform: translateY(0px);
+    transform: translateX(-80px);
+  }
+  40% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(60px);
+  }
+}
+
+/* The element to apply the animation to */
+.hide {
+  display: none;
+}
+
+.cloud {
+  transform: translateX(-100px);
+}
+
+.drop {
+  transform: translateX(-100px);
+}
+
+.cloud.active {
+  animation-name: cloudappear;
+  animation-duration: 4s;
+}
+
+.rain {
+  animation-name: rain;
+  animation-duration: 4s;
+}
+
+/*BURGER*/
+/*Animation Code*/
+@-webkit-keyframes down {
+  0%   {
+  	transform: translateY(0px);
+  }
+  50% {
+  	transform: translateY(10px);
+  }
+  100% {
+  	transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes middledown {
+  0%   {
+  	transform: translateY(0px);
+  }
+  50% {
+  	transform: translateY(3px);
+  }
+  100% {
+  	transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes up {
+  0%   {
+  	transform: translateY(0px);
+  }
+  50% {
+  	transform: translateY(-10px);
+  }
+  100% {
+  	transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes middleup {
+  0%   {
+  	transform: translateY(0px);
+  }
+  50% {
+  	transform: translateY(-3px);
+  }
+  100% {
+  	transform: translateY(0px);
+  }
+}
+
+.hide {
+	display: none;
+}
+
+.bite.active {
+	animation-name: up;
+	animation-duration: 1.2s;
+}
+
+/* The element to apply the animation to */
+.bottombun.active {
+	animation-name: down;
+	animation-duration: 1.2s;
+}
+
+.saladgroup.active {
+	animation-name: middledown;
+	animation-duration: 1.2s;
+}
+
+.patty.active {
+	animation-name: middleup;
+	animation-duration: 1.2s;
+}
+
+.topgroup.active {
+	animation-name: up;
+	animation-duration: 1.2s;
+}
+
+/*AVOCADO*/
+/*Animation Code*/
+@-webkit-keyframes rotate {
+  0%   {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes turnbrown {
+  0%   {
+    fill: #70b224;
+  }
+  100% {
+    fill: #c7b299;
+  }
+}
+
+@-webkit-keyframes turngreen {
+  0%   {
+    fill: #c7b299;
+  }
+  100% {
+    fill: #70b224;
+  }
+}
+
+/* The element to apply the animation to */
+
+.rotate {
+  animation-name: rotate;
+  transform-origin: 50% 50%;
+  animation-duration: 2s;
+}
+
+.turnbrown {
+  animation-name: turnbrown;
+  animation-duration: 2s;
+}
+
+.turngreen {
+  animation-name: turngreen;
+  animation-duration: 2s;
 }
 
 /*----CV PAGE SPECIFIC STYLING----*/
