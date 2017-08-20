@@ -36,35 +36,44 @@ $(document).ready(function () {
 	/*BURGER*/
 	// Normally we bundle all vars at the top but i'll leave this one ere for readability
 	var lateNightSnack = $(".latenightsnack");
+	var topGroup = $(".topgroup");
+	var patty = $(".patty");
+	var saladGroup = $(".saladgroup");
+	var btmBun = $(".bottombun");
+	var bite = $(".bite");
 
 	lateNightSnack.on("mouseenter", function() {
-		$(".topgroup").addClass("active");
-		$(".patty").addClass("active");
-		$(".saladgroup").addClass("active");
-		$(".bottombun").addClass("active");
-		$(".bite").addClass("active");
+		topGroup.addClass("active");
+		patty.addClass("active");
+		saladGroup.addClass("active");
+		btmBun.addClass("active");
+		bite.addClass("active");
 	});
 
 	lateNightSnack.on("webkitAnimationEnd mozAnimationEnd animationEnd", function() {
-		$(".topgroup").removeClass("active");
-		$(".patty").removeClass("active");
-		$(".saladgroup").removeClass("active");
-		$(".bottombun").removeClass("active");
-		$(".bite").removeClass("active");
+		topGroup.removeClass("active");
+		patty.removeClass("active");
+		saladGroup.removeClass("active");
+		btmBun.removeClass("active");
+		bite.removeClass("active");
 	});
 
 	/*AVOCADO*/
+	var avocadoNet = $(".avocadonet");
+	var avocado = $(".avocado");
+	var green = $(".green");
+	var brown = $(".brown");
 
-	$(".brightgreen").on("mouseenter", function() {
-		$(".avocado").addClass("rotate");
-		$(".green").addClass("turnbrown");
-		$(".brown").addClass("turngreen");
+	avocadoNet.on("mouseenter", function() {
+		avocado.addClass("rotate");
+		green.addClass("turnbrown");
+		brown.addClass("turngreen");
 	});
 
-	$(".brightgreen").on("webkitAnimationEnd mozAnimationEnd animationEnd", function() {
-		$(".avocado").removeClass("rotate");
-		$(".green").removeClass("turnbrown");
-		$(".brown").removeClass("turngreen");
+	avocadoNet.on("webkitAnimationEnd mozAnimationEnd animationEnd", function() {
+		avocado.removeClass("rotate");
+		green.removeClass("turnbrown");
+		brown.removeClass("turngreen");
 	});
 
 });
