@@ -230,10 +230,8 @@ a {
   }
 }
 
+
 /* The element to apply the animation to */
-.hide {
-  display: none;
-}
 
 .cloud {
   transform: translateX(-100px);
@@ -246,11 +244,13 @@ a {
 .cloud.active {
   animation-name: cloudappear;
   animation-duration: 4s;
+  animation-iteration-count: 1;
 }
 
-.rain {
+.drop.active {
   animation-name: rain;
   animation-duration: 4s;
+  animation-iteration-count: 1;
 }
 
 /*BURGER*/
@@ -303,11 +303,12 @@ a {
   }
 }
 
-.hide {
+.bite {
 	display: none;
 }
 
 .bite.active {
+  display: block;
 	animation-name: up;
 	animation-duration: 1.2s;
 }
@@ -375,12 +376,16 @@ a {
 
 .turnbrown {
   animation-name: turnbrown;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 .turngreen {
   animation-name: turngreen;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 /*----CV PAGE SPECIFIC STYLING----*/
